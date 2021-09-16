@@ -1,4 +1,4 @@
-package custom
+package myplugin
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
