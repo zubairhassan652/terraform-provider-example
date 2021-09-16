@@ -9,7 +9,7 @@ import (
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
 		ProviderFunc: func() terraform.ResourceProvider {
-			return myplugin.Provider()
+			return myplugin.Provider() // provider
 		},
 	})
 }
