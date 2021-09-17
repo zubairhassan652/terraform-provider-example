@@ -11,7 +11,7 @@ type Config struct {
 func resourcePluginSourceRead(d *schema.ResourceData, meta interface{}) error {
 	config := meta.(*Config)
 
-	d.SetId("some_id_for_set_values")
+	d.SetId(config.ApiKey)
 
 	// here we can do what we want and set for output
 	d.Set("data_source_schema_variable", config.ApiKey)
@@ -40,7 +40,7 @@ func providerConfig(d *schema.ResourceData) (interface{}, error) {
 func Provider() *schema.Provider {
 	return &schema.Provider{
 		DataSourcesMap: map[string]*schema.Resource{
-			"plugin_data": dataSourcePlugin(),
+			"example_data": dataSourcePlugin(),
 		},
 		Schema: map[string]*schema.Schema{
 			"api_key": &schema.Schema{
