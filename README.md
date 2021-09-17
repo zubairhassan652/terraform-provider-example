@@ -15,21 +15,21 @@ In main.go on line # 6 change import link according to your username of github
 ### Step4
 Remove git origin of this repo and add your repo as origin
 
-### Step5 
-commit code  
-add tag as v1.0.0  
-push code and tag to your repo
-
-### Step6
+### Step5
 Create terraform account using github signup
 
-### Step7 
+### Step6
 Create a gpg key on your local system and get its public and private keys
 
 
 1) Add public gpg key to your terrafrom account
 
 2) Add private gpg in secrets of your github repo with name `GPG_PRIVATE_KEY`
+
+### Step7
+commit code  
+add tag as v1.0.0  
+push code and tag to your repo
 
 ### Step8
 Rerun your github action and you are done!
