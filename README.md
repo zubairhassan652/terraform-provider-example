@@ -17,7 +17,7 @@ Remove git origin of this repo and add your repo as origin
 
 ### Step5 
 commit code  
-add tag as v1.0.0 like
+add tag as v1.0.0  
 push code and tag to your repo
 
 ### Step6
